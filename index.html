@@ -24,11 +24,15 @@
     }
     /* The cursor. */
     .jqconsole-cursor {
-        background-color: gray;
+        /*background-color: gray;*/
+        color: #0d0;
+        background-color: black;
+
     }
     /* The cursor color when the console looses focus. */
     .jqconsole-blurred .jqconsole-cursor {
-        background-color: #666;
+        /*background-color: #666;*/
+        background-color: black;
     }
     /* The current prompt text color */
     .jqconsole-prompt {
@@ -53,6 +57,7 @@
         color: cyan;
     }
     </style>
+    <link rel="stylesheet" type="text/css" href="lib/ansi.css">
   </head>
   <body>
     <div id="console"></div>

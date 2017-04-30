@@ -56,6 +56,44 @@
     .jqconsole-output {
         color: cyan;
     }
+    @-webkit-keyframes blinker {  
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+    }
+
+    @-moz-keyframes blinker {  
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+    }
+
+    @-ms-keyframes blinker {  
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+    }
+
+    @-o-keyframes blinker {  
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+    }
+
+    .jqconsole-ansi-blink {
+    -webkit-animation-name: blinker;
+    -moz-animation-name: blinker;
+    -ms-animation-name: blinker;
+    -o-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite; 
+    -o-animation-iteration-count: infinite; 
+    -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    -ms-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    -o-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    -moz-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    -webkit-animation-duration: 1s; 
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+}
     </style>
     <link rel="stylesheet" type="text/css" href="lib/ansi.css">
   </head>
